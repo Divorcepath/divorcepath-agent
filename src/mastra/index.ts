@@ -1,6 +1,5 @@
 import { Mastra } from '@mastra/core/mastra';
 import { registerCopilotKit } from "@ag-ui/mastra";
-import { PinoLogger } from '@mastra/loggers';
 import { weatherWorkflow } from './workflows';
 import { weatherAgent } from './agents';
 
@@ -29,8 +28,4 @@ export const mastra = new Mastra({
       })
     ]
   },
-  logger: new PinoLogger({
-    name: 'Mastra',
-    level: 'info',
-  }),
 });
